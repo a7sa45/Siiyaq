@@ -20,17 +20,19 @@ body {
 </style>
 
 <main class="form-signin w-100 m-auto">
+  <div class="card mb-4 rounded-3 shadow-sm">
+    <div class="card-header py-3">
+      <h4 class="my-0 fw-normal">افتح سياق</h4>
+    </div>
+    <div class="card-body">
     <form method="POST" action="/siiyaqs" enctype="multipart/form-data">
         @csrf
-        
-      
-      <h1 class="h3 mb-3 fw-normal">إنشاء سياق</h1>
       <div class="form-floating">
         <input style="margin-bottom: 10px" type="text" id="context" class="form-control " name="context" value="" required="" autocomplete="context" autofocus="" placeholder="context" fdprocessedid="kvebpl">
         <label for="floatingInput">عنوان السياق</label>
       </div>
-      <button class="w-100 btn btn-lg btn-primary" style="background-color: rgb(8, 82, 105)" type="submit">تعديل</button>
-      
+      <button class="w-100 btn btn-lg btn-primary" style="background-color: rgb(8, 82, 105)" type="submit">فتح سياق</button>
     </form>
-  </main>
+  </div>
+</main>
 @endsection
